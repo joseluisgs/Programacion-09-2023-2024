@@ -1,0 +1,75 @@
+.root {
+    -fx-background-color: #d2d2fa; /* Fondo rojo suave para toda la ventana */
+}
+
+.menu-bar, .menu {
+    -fx-background-color: #ff7f7f; /* Fondo rojo para la barra de menú y elementos de menú */
+}
+
+.menu:hover, .menu:focused {
+    -fx-background-color: #fa9696; /* Rojo para elementos seleccionados */
+}
+
+.menu-item {
+    -fx-background-color: #ff7f7f; /* Fondo rojo para los items del menú*/
+}
+
+.menu-item:focused, .menu-item:hover {
+    -fx-background-color: #fa9696; /* Rojo para elementos seleccionados */
+}
+
+/* El pop up que sale con los menu es el estilo context-menu */
+.context-menu {
+    -fx-background-color: #ff7f7f;
+    -fx-padding: 0;
+}
+
+.label {
+    -fx-text-fill: #000d56; /* Color del texto para las etiquetas */
+}
+
+
+.table-view {
+    -fx-base: #fc7b7b; /* Color base para la tabla */
+    -fx-control-inner-background: #ffffff; /* Fondo de la tabla */
+    -fx-selection-bar: #000d56; /* Color de fondo para el texto seleccionado */
+}
+
+.text-field {
+    -fx-control-inner-background: #fff7da; /* Fondo para los campos de texto */
+    -fx-text-fill: #000d56; /* Color del texto para los campos de texto */
+    -fx-focus-color: red; /* Color de foco para todos los textfields */
+    -fx-background-radius: 5px; /* Radio de los bordes para TextField */
+}
+
+.text-area {
+    -fx-control-inner-background: #fff7da; /* Fondo para el área de texto */
+    -fx-text-fill: #000d56; /* Color del texto para el área de texto */
+    -fx-background-radius: 5px; /* Radio de los bordes para TextArea */
+    -fx-focus-color: red; /* Color de foco para todos los comboboxes */
+}
+
+.combo-box {
+    -fx-background-color: #fff7da; /* Fondo para los ComboBox */
+    -fx-text-fill: #000d56; /* Color del texto para los ComboBox */
+    -fx-control-inner-background: #fff7da; /* Fondo para los ComboBox */
+    -fx-selection-bar: #000d56; /* Color de fondo para el texto seleccionado */
+    -fx-focus-color: red; /* Color de foco para todos los comboboxes */
+}
+
+
+/*.combo-box .list-cell:focused {
+    -fx-background-color: #000d56; !* Rojo para el foco en el ComboBox *!
+    -fx-text-fill: #fff7da; !* Color del texto para el foco en el ComboBox *!
+}*/
+
+.split-pane {
+    -fx-background-color: #d2d2fa; /* Fondo primario azul para los paneles divididos */
+}
+
+
+.slider {
+    -fx-control-inner-background: #fff7da; /* Fondo para los sliders */
+    -fx-text-fill: #000d56; /* Color del texto para los sliders */
+    -fx-focus-color: red; /* Color de foco para los sliders */
+}

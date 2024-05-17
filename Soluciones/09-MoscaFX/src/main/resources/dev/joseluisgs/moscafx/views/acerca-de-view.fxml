@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="155.0" prefWidth="350.0"
+            xmlns="http://javafx.com/javafx/17.0.2-ea"
+            fx:controller="dev.joseluisgs.moscafx.acercade.controllers.AcercaDeViewController">
+    <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="24.0" layoutY="22.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../icons/app.png"/>
+    </ImageView>
+    <Label contentDisplay="CENTER" layoutX="176.0" layoutY="22.0" prefHeight="31.0" prefWidth="134.0" text="Mosca DAW"
+           textAlignment="CENTER" textOverrun="CLIP">
+        <font>
+            <Font name="System Bold" size="21.0"/>
+        </font>
+    </Label>
+    <Label layoutX="159.0" layoutY="54.0" text="Programación 1º DAW">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Label>
+    <Hyperlink fx:id="linkGitHub" layoutX="231.0" layoutY="87.0" text="GitHub">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Hyperlink>
+    <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="195.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../icons/github.png"/>
+    </ImageView>
+</AnchorPane>

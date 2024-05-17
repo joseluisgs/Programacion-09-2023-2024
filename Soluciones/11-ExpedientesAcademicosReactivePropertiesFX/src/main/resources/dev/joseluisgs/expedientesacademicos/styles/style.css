@@ -1,0 +1,36 @@
+.root {
+    -fx-base: #E0E0E0; /* Un gris más suave */
+    -fx-background: #F4F4F8; /* Un fondo ligeramente azulado */
+}
+
+.button {
+    -fx-background-color: #B0C4DE; /* Un azul acero claro */
+    -fx-background-radius: 10; /* Botones más redondeados */
+}
+
+.text-field, .combo-box-base {
+    -fx-background-color: #FFFFFF; /* Fondo blanco para claridad */
+    -fx-background-radius: 10; /* Más redondeado */
+    -fx-border-color: #B0C4DE; /* Borde azul acero claro */
+    -fx-border-radius: 10; /* Bordes redondeados */
+}
+
+.menu-bar {
+    -fx-background-color: #D3D3D3; /* Un gris claro para la barra de menú */
+}
+
+.table-view {
+    -fx-base: #F0F8FF; /* Un azul Alice muy claro para la base de la tabla */
+    -fx-control-inner-background: #F0F8FF; /* Fondo interno de la tabla */
+    -fx-background-color: #F0F8FF; /* Color de fondo de la tabla */
+    -fx-table-cell-border-color: transparent; /* Bordes de celda transparentes */
+    -fx-padding: 5; /* Padding mantenido */
+}
+
+.label {
+    -fx-text-fill: #013334; /* Un color azul cadete para el texto de las etiquetas */
+}
+
+.image-alumno {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0); /* Sombra mantenido */
+}

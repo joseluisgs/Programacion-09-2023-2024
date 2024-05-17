@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="440.0" prefWidth="680.0"
+      stylesheets="@../styles/pokedex.css" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      fx:controller="dev.joseluisgs.pokedexfx.pokedex.controllers.PokedexViewConroller">
+    <MenuBar VBox.vgrow="NEVER">
+        <Menu mnemonicParsing="false" text="Archivo">
+            <MenuItem fx:id="menuAbrir" mnemonicParsing="false" text="Abrir Pokedex Json">
+                <graphic>
+                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../icons/file-import.png"/>
+                    </ImageView>
+                </graphic>
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem fx:id="menuSalir" mnemonicParsing="false" text="Salir">
+                <graphic>
+                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../icons/exit.png"/>
+                    </ImageView>
+                </graphic>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Ayuda">
+            <MenuItem fx:id="menuAcercaDe" mnemonicParsing="false" text="Acerca de Pokedex DAM">
+                <graphic>
+                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../icons/about.png"/>
+                    </ImageView>
+                </graphic>
+            </MenuItem>
+        </Menu>
+    </MenuBar>
+    <AnchorPane VBox.vgrow="ALWAYS">
+        <SplitPane dividerPositions="0.5329428989751098" layoutX="61.0" layoutY="42.0" prefHeight="373.0"
+                   prefWidth="669.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="449.0" prefWidth="444.0">
+                <VBox prefHeight="449.0" prefWidth="358.0" spacing="5.0" AnchorPane.bottomAnchor="0.0"
+                      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <HBox alignment="CENTER" prefHeight="47.0" prefWidth="332.0">
+                        <Label text="Nombre:">
+                            <HBox.margin>
+                                <Insets right="10.0"/>
+                            </HBox.margin>
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="textBuscador" prefHeight="26.0" prefWidth="149.0">
+                            <HBox.margin>
+                                <Insets right="10.0"/>
+                            </HBox.margin>
+                        </TextField>
+                        <ComboBox fx:id="comboTipo" prefHeight="26.0" prefWidth="115.0"/>
+                    </HBox>
+                    <TableView fx:id="tablePokemon" prefHeight="381.0" prefWidth="361.0">
+                        <columns>
+                            <TableColumn fx:id="tableColumnNumero" editable="false" prefWidth="104.0" text="Num"/>
+                            <TableColumn fx:id="tableColumNombre" editable="false" prefWidth="256.0" text="Nombre"/>
+                        </columns>
+                    </TableView>
+                    <Slider fx:id="sliderPokemons" prefHeight="0.0" prefWidth="361.0"/>
+                    <padding>
+                        <Insets bottom="5.0" top="5.0"/>
+                    </padding>
+                </VBox>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="449.0" prefWidth="351.0">
+                <Label layoutX="19.0" layoutY="36.0" text="Ficha Pokemon" AnchorPane.leftAnchor="19.0"
+                       AnchorPane.topAnchor="36.0">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                </Label>
+                <ImageView fx:id="imgPokemon" fitHeight="100.0" fitWidth="100.0" layoutX="199.0" layoutY="14.0"
+                           pickOnBounds="true" preserveRatio="true"
+                           style="-fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 0);;"
+                           AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="14.0">
+                    <Image url="@../images/sin-image.png"/>
+                </ImageView>
+                <Label layoutX="14.0" layoutY="101.0" text="Num:">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="textPokemonNumero" editable="false" layoutX="101.0" layoutY="98.0" prefHeight="26.0"
+                           prefWidth="49.0"/>
+                <Label layoutX="14.0" layoutY="139.0" text="Nombre:">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="textPokemonNombre" editable="false" layoutX="101.0" layoutY="136.0" prefHeight="26.0"
+                           prefWidth="195.0"/>
+                <Label layoutX="14.0" layoutY="179.0" text="Altura:">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="textPokemonAltura" editable="false" layoutX="101.0" layoutY="176.0" prefHeight="26.0"
+                           prefWidth="50.0"/>
+                <Label layoutX="14.0" layoutY="220.0" text="Peso:">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="textPokemonPeso" editable="false" layoutX="101.0" layoutY="217.0" prefHeight="26.0"
+                           prefWidth="50.0"/>
+                <Label layoutX="17.0" layoutY="256.0" text="Debilidades:">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </Label>
+                <TextArea fx:id="textPokemonDebilidades" editable="false" layoutX="101.0" layoutY="256.0"
+                          prefHeight="55.0" prefWidth="195.0"/>
+                <Label layoutX="19.0" layoutY="342.0" text="Evoluciones:">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </Label>
+                <TextArea fx:id="textPokemonEvoluciones" editable="false" layoutX="102.0" layoutY="339.0"
+                          prefHeight="55.0" prefWidth="195.0"/>
+                <Label layoutX="157.0" layoutY="221.0" prefHeight="18.0" prefWidth="30.0" text="Kg.">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="159.0" layoutY="179.0" prefHeight="18.0" prefWidth="30.0" text="m.">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </Label>
+            </AnchorPane>
+        </SplitPane>
+    </AnchorPane>
+</VBox>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="350.0" prefWidth="876.0"
+      xmlns="http://javafx.com/javafx/17.0.2-ea"
+      fx:controller="dev.joseluisgs.moscafx.mosca.controllers.MoscaConfigViewController">
+    <MenuBar VBox.vgrow="NEVER">
+        <Menu mnemonicParsing="false" text="Archivo">
+            <MenuItem fx:id="menuSalir" mnemonicParsing="false" text="Salir">
+                <graphic>
+                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../icons/exit.png"/>
+                    </ImageView>
+                </graphic>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Ayuda">
+            <MenuItem fx:id="menuAcercaDe" mnemonicParsing="false" text="Acerca de Mosca DAW">
+                <graphic>
+                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../icons/about.png"/>
+                    </ImageView>
+                </graphic>
+            </MenuItem>
+        </Menu>
+    </MenuBar>
+    <AnchorPane VBox.vgrow="ALWAYS">
+        <SplitPane layoutX="61.0" layoutY="42.0" prefHeight="373.0" prefWidth="669.0" AnchorPane.bottomAnchor="0.0"
+                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="411.0" prefWidth="339.0">
+                <VBox prefHeight="449.0" prefWidth="361.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"
+                      AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <HBox alignment="CENTER" prefHeight="95.0" prefWidth="358.0">
+                        <ImageView fitHeight="69.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@../icons/app.png"/>
+                        </ImageView>
+                        <Label text="La mosca">
+                            <HBox.margin>
+                                <Insets left="10.0"/>
+                            </HBox.margin>
+                            <font>
+                                <Font name="System Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                    </HBox>
+                    <VBox fx:id="panelConfiguracion" alignment="CENTER">
+                        <children>
+                            <GridPane alignment="CENTER" hgap="10.0" vgap="10.0">
+                                <columnConstraints>
+                                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES"
+                                                       maxWidth="384.80000000000007" minWidth="10.0" prefWidth="304.6"/>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="504.40001525878904" minWidth="0.0"
+                                                       prefWidth="307.4"/>
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                </rowConstraints>
+                                <Label text="Dimension:"/>
+                                <Label text="Intentos:" GridPane.rowIndex="1"/>
+                                <Spinner fx:id="spinnerDimension" GridPane.columnIndex="1"/>
+                                <Spinner fx:id="spinnerIntentos" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                            </GridPane>
+                            <HBox alignment="CENTER" prefHeight="53.0" prefWidth="338.0">
+                                <children>
+                                    <Button fx:id="botonComenzar" mnemonicParsing="false" text="Comenzar"/>
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                </VBox>
+            </AnchorPane>
+        </SplitPane>
+    </AnchorPane>
+</VBox>

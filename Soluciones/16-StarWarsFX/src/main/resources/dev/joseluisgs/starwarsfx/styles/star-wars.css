@@ -1,0 +1,82 @@
+.root {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-background-color: #e7e7e7;
+}
+
+.menu-bar {
+    -fx-background-color: #c4c4c4;
+    -fx-text-fill: #818181;
+}
+
+.menu {
+    -fx-text-fill: #ddd;
+}
+
+.label {
+    -fx-text-fill: #0e0e0e;
+}
+
+.button {
+    -fx-background-color: #333;
+    -fx-text-fill: #e1d100;
+    -fx-border-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #555;
+}
+
+.text-area, .text-field {
+    -fx-control-inner-background: #333;
+    -fx-border-radius: 5;
+    -fx-text-fill: #d7cc00;
+}
+
+.progress-bar .track {
+    -fx-background-color: #333; /* Fondo oscuro para la barra de progreso */
+}
+
+.progress-bar .bar {
+    -fx-background-color: #d7cc00; /* Color amarillo estilo sable de luz */
+}
+
+.spinner {
+    -fx-background-color: #333;
+    -fx-text-fill: #d7cc00;
+}
+
+.hbox, .vbox {
+    -fx-spacing: 5px;
+    -fx-alignment: center;
+}
+
+
+#textOperacion, #textCuadrante {
+    /* fuente mono para que se vea mejor  la matriz */
+    -fx-font-family: 'Consolas', monospace;
+    -fx-text-fill: #d7cc00;
+}
+
+.image-sombra {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}
+
+.menu-item {
+    -fx-text-fill: #aaa;
+}
+
+.menu-item:hover {
+    -fx-text-fill: #fff;
+    -fx-background-color: #666;
+}
+
+.context-menu {
+    -fx-background-color: #aaa;
+    -fx-text-fill: #ddd;
+    -fx-padding: 0px;
+}
+
+.context-menu .menu-item:hover {
+    -fx-background-color: #7e7e7e;
+}
+
